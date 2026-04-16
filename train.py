@@ -12,7 +12,7 @@ from tqdm import tqdm
 # ============================================================
 # 1. Muat Dataset
 # ============================================================
-df = pd.read_csv('dataset_final_balanced.csv')
+df = pd.read_csv('dataset2.csv')
 df = df.dropna(subset=['text_clean', 'label']).copy()
 df['label'] = df['label'].astype(int)
 
